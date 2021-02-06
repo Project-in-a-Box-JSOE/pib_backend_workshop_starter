@@ -37,6 +37,7 @@ function user_service(db, indexRouter) {
      * TASK 2: Follow along the slides and write POST request:
      * Curl command to test POST
      * curl -d '{"firstName":"POSTFirstName", "lastName": "POSTLastName"}' -H "Content-Type: application/json" -X POST http://localhost:3000/user
+     * curl -d firstName=POSTFirstName -d lastName=POSTLastName -H "Content-Type: application/json" -X POST http://localhost:3000/user
      */
     
     
@@ -45,6 +46,7 @@ function user_service(db, indexRouter) {
      * Update user given ID
      * Curl command to test PUT
      * curl -d '{"firstName":"PUTFirstName", "lastName": "PUTLastName"}' -H "Content-Type: application/json" -X PUT http://localhost:3000/user/update/1
+     * curl -d firstName=PUTFirstName -d lastName=PUTLastName -H "Content-Type: application/json" -X PUT http://localhost:3000/user/update/1
      */
     indexRouter.put('/user/update/:id', function(req, res, next){
         const id = req.params.id;
