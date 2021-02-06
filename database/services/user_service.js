@@ -37,7 +37,7 @@ function user_service(db, indexRouter) {
      * TASK 2: Follow along the slides and write POST request:
      * Curl command to test POST
      * curl -d '{"firstName":"POSTFirstName", "lastName": "POSTLastName"}' -H "Content-Type: application/json" -X POST http://localhost:3000/user
-     * curl -d firstName=POSTFirstName -d lastName=POSTLastName -H "Content-Type: application/json" -X POST http://localhost:3000/user
+     * curl -d firstName=POSTFirstName -d lastName=POSTLastName -X POST http://localhost:3000/user
      */
     
     
